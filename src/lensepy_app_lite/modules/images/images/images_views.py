@@ -7,7 +7,7 @@ from PyQt6.QtWidgets import (
 )
 from lensepy.utils import *
 from lensepy.css import *
-from lensepy_app.widgets.objects import *
+from lensepy_app_lite.widgets.objects import *
 
 
 class ImagesOpeningWidget(QWidget):

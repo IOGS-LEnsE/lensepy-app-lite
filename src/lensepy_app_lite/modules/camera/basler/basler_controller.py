@@ -1,13 +1,13 @@
 import time
 from pathlib import Path
-import lensepy_app
+import lensepy_app_lite
 from PyQt6.QtCore import QObject, QThread
-from lensepy_app.appli._app.template_controller import TemplateController, ImageLive
-from lensepy_app.modules.camera.basler.basler_views import *
-from lensepy_app.modules.camera.basler.basler_models import *
-from lensepy_app.widgets.camera_widget import *
-from lensepy_app.widgets.image_display_widget import *
-from lensepy_app.widgets.histogram_widget import *
+from lensepy_app_lite.appli._app.template_controller import TemplateController, ImageLive
+from lensepy_app_lite.modules.camera.basler.basler_views import *
+from lensepy_app_lite.modules.camera.basler.basler_models import *
+from lensepy_app_lite.widgets.camera_widget import *
+from lensepy_app_lite.widgets.image_display_widget import *
+from lensepy_app_lite.widgets.histogram_widget import *
 from lensepy import translate
 
 
@@ -116,7 +116,7 @@ class BaslerController(TemplateController):
                 camera_ini_file = self.parent.parent.config.get('camera_ini')
                 if camera_ini_file is not None:
                     if camera_ini_file.startswith('.'):
-                        base_path = Path(lensepy_app.__file__).parent
+                        base_path = Path(lensepy_app_lite.__file__).parent
                         file_path = f'{base_path}/applis_dir/cmos_gui/{camera_ini_file.lstrip('./')}'
                     else:
                         file_path = camera_ini_file

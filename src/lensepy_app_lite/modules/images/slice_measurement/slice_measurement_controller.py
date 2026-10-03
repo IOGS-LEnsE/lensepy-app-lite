@@ -7,9 +7,9 @@ from PyQt6.QtWidgets import QWidget
 
 from lensepy import translate
 from lensepy.css import *
-from lensepy_app.appli._app.template_controller import TemplateController, ImageLive
-from lensepy_app.widgets import ImageDisplayWithCrosshair, XYMultiChartWidget, HistoStatsWidget
-from lensepy_app.modules.images.slice_measurement.slice_measurement_views import SliceMeasurementWidget
+from lensepy_app_lite.appli._app.template_controller import TemplateController, ImageLive
+from lensepy_app_lite.widgets import ImageDisplayWithCrosshair, XYMultiChartWidget, HistoStatsWidget
+from lensepy_app_lite.modules.images.slice_measurement.slice_measurement_views import SliceMeasurementWidget
 
 
 class SliceMeasurementController(TemplateController):

@@ -1,11 +1,11 @@
 import sys, os, copy
-import lensepy_app
+import lensepy_app_lite
 from pathlib import Path
 from lensepy import translate, load_dictionary
-from lensepy_app.appli._app.app_utils import XMLFileConfig, XMLFileModule
-from lensepy_app.appli._app.main_view import MainWindow
+from lensepy_app_lite.appli._app.app_utils import XMLFileConfig, XMLFileModule
+from lensepy_app_lite.appli._app.main_view import MainWindow
 import importlib
-from lensepy_app.modules.default.default_controller import DefaultController
+from lensepy_app_lite.modules.default.default_controller import DefaultController
 
 
 class MainManager:
@@ -80,9 +80,9 @@ class MainManager:
         self.main_window.update_menu()
 
     def init_controller(self):
-        package_root = os.path.dirname(lensepy_app.__file__)
+        package_root = os.path.dirname(lensepy_app_lite.__file__)
         if self.actual_module == 'default':
-            lensepy_path = (os.path.dirname(lensepy_app.__file__))
+            lensepy_path = (os.path.dirname(lensepy_app_lite.__file__))
             xml_path = lensepy_path +'/modules/default/default.xml'
             self.xml_module = XMLFileModule(xml_path)
             self.controller = DefaultController(self)

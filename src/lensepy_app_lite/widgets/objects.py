@@ -8,12 +8,12 @@ __all__ = ['message_box', 'make_hline', 'make_vline',
            'VerticalCenteredGauge']
 
 from PyQt6.QtGui import QColor, QBrush, QPainter
-from lensepy_app.widgets.switch import SwitchWidget
-from lensepy_app.widgets.widget_progress_bar import ProgressBarView, QProgressBar
-from lensepy_app.widgets.image_display_widget import ImageDisplayWidget, ImageDisplayWithCrosshair
-from lensepy_app.widgets.histogram_widget import HistogramWidget
-from lensepy_app.widgets.xy_multi_chart_widget import XYMultiChartWidget
-from lensepy_app.widgets.widget_xy_chart import XYChartWidget
+from lensepy_app_lite.widgets.switch import SwitchWidget
+from lensepy_app_lite.widgets.widget_progress_bar import ProgressBarView, QProgressBar
+from lensepy_app_lite.widgets.image_display_widget import ImageDisplayWidget, ImageDisplayWithCrosshair
+from lensepy_app_lite.widgets.histogram_widget import HistogramWidget
+from lensepy_app_lite.widgets.xy_multi_chart_widget import XYMultiChartWidget
+from lensepy_app_lite.widgets.widget_xy_chart import XYChartWidget
 from PyQt6.QtCore import Qt, pyqtSignal, QRectF, QRect
 from PyQt6.QtGui import QPainter, QColor, QPen
 from PyQt6.QtWidgets import (

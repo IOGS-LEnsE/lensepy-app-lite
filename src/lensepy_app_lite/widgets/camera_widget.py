@@ -4,7 +4,7 @@ from PyQt6.QtWidgets import QWidget, QVBoxLayout, QLabel
 
 from lensepy import translate
 from lensepy.css import *
-from lensepy_app.widgets.objects import make_hline, LabelWidget, SliderBloc
+from lensepy_app_lite.widgets.objects import make_hline, LabelWidget, SliderBloc
 
 
 class CameraParamsWidget(QWidget):

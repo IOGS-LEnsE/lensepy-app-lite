@@ -9,14 +9,14 @@ from lensepy.css import *
 from lensepy.utils import *
 from scipy.ndimage import value_indices
 
-from lensepy_app import *
-from lensepy_app.widgets import *
-from lensepy_app.widgets.objects import LabelWidget, SelectWidget
+from lensepy_app_lite import *
+from lensepy_app_lite.widgets import *
+from lensepy_app_lite.widgets.objects import LabelWidget, SelectWidget
 
 
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
-    from lensepy_app.modules.camera.basler.basler_controller import BaslerController
+    from lensepy_app_lite.modules.camera.basler.basler_controller import BaslerController
 
 class CameraInfosWidget(QWidget):
     """

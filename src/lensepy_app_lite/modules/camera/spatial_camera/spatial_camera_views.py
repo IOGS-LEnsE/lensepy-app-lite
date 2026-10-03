@@ -5,11 +5,11 @@ from PyQt6.QtWidgets import QWidget, QVBoxLayout, QLabel, QSizePolicy, QHBoxLayo
     QMessageBox
 from lensepy.css import *
 from lensepy import translate
-from lensepy_app.modules.camera.basler import BaslerController, BaslerCamera
-from lensepy_app.widgets import *
+from lensepy_app_lite.modules.camera.basler import BaslerController, BaslerCamera
+from lensepy_app_lite.widgets import *
 from lensepy.utils.images import process_hist_from_array, save_hist, save_slice
-from lensepy_app.widgets import CameraParamsWidget, HistogramWidget
-from lensepy_app.widgets.objects import *
+from lensepy_app_lite.widgets import CameraParamsWidget, HistogramWidget
+from lensepy_app_lite.widgets.objects import *
 
 
 class HistoSaveWidget(CameraParamsWidget):

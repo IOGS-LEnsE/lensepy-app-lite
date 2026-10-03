@@ -1,12 +1,12 @@
 import sys, os
 from pathlib import Path
 
-import lensepy_app
+import lensepy_app_lite
 from lensepy import translate, load_dictionary, dictionary
 
-from lensepy_app.modules.default.default_controller import DefaultController
-from lensepy_app.appli._app.app_utils import XMLFileConfig, XMLFileModule
-from lensepy_app.appli._app.main_manager import MainManager
+from lensepy_app_lite.modules.default.default_controller import DefaultController
+from lensepy_app_lite.appli._app.app_utils import XMLFileConfig, XMLFileModule
+from lensepy_app_lite.appli._app.main_manager import MainManager
 from PyQt6.QtWidgets import QApplication
 import importlib
 import importlib.util
@@ -22,7 +22,7 @@ class My_Application(QApplication):
         self.manager = MainManager(self)
         self.window = self.manager.main_window
         self.standalone = standalone
-        self.package_root = os.path.dirname(lensepy_app.__file__)
+        self.package_root = os.path.dirname(lensepy_app_lite.__file__)
         self.app_name = app_name
         self.appli_root = None
         if not self.standalone:

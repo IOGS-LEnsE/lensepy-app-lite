@@ -2,15 +2,15 @@ import time
 from PyQt6.QtCore import QObject, QThread
 from PyQt6.QtWidgets import QDialog
 from pathlib import Path
-import lensepy_app
+import lensepy_app_lite
 
-from lensepy_app.appli._app.template_controller import TemplateController, ImageLive
-from lensepy_app.modules.camera.baslerlite.baslerlite_views import *
-from lensepy_app.modules.camera.basler.basler_models import *
-from lensepy_app.widgets.image_display_widget import *
-from lensepy_app.widgets.histogram_widget import *
+from lensepy_app_lite.appli._app.template_controller import TemplateController, ImageLive
+from lensepy_app_lite.modules.camera.baslerlite.baslerlite_views import *
+from lensepy_app_lite.modules.camera.basler.basler_models import *
+from lensepy_app_lite.widgets.image_display_widget import *
+from lensepy_app_lite.widgets.histogram_widget import *
 from lensepy import translate
-from lensepy_app.modules.optics.zygo.masks.masks_view import MasksView
+from lensepy_app_lite.modules.optics.zygo.masks.masks_view import MasksView
 
 
 class BaslerController(TemplateController):
@@ -107,7 +107,7 @@ class BaslerController(TemplateController):
                 camera_ini_file = self.parent.parent.config.get('camera_ini')
                 if camera_ini_file is not None:
                     if camera_ini_file.startswith('.'):
-                        base_path = Path(lensepy_app.__file__).parent
+                        base_path = Path(lensepy_app_lite.__file__).parent
                         file_path = f'{base_path}/{camera_ini_file}'
                     else:
                         file_path = camera_ini_file

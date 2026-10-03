@@ -7,8 +7,7 @@ from PyQt6.QtCore import Qt, pyqtSignal, QPointF
 from PyQt6.QtGui import QPen, QColor
 from PyQt6.QtWidgets import QGraphicsLineItem
 from lensepy.css import *
-from lensepy_app.widgets import ImageDisplayWidget
-
+from lensepy_app_lite.widgets import ImageDisplayWidget
 
 
 

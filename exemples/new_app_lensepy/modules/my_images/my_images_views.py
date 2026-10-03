@@ -7,7 +7,7 @@ from PyQt6.QtWidgets import (
     QFileDialog, QMessageBox, QPushButton
 )
 from lensepy.utils import *
-from lensepy_app.widgets import *
+from lensepy_app_lite.widgets import *
 
 
 class ImagesOpeningWidget(QWidget):

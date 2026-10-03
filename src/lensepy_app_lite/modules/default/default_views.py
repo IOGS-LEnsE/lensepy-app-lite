@@ -3,7 +3,7 @@ from PyQt6.QtGui import QGuiApplication
 from PyQt6.QtWidgets import QWidget, QLabel, QVBoxLayout
 from lensepy import translate
 from lensepy.css import *
-from lensepy_app.widgets import make_hline
+from lensepy_app_lite.widgets import make_hline
 
 
 contributors_type = ['main_dev','dev','sciexp']

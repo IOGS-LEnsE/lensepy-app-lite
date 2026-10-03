@@ -3,10 +3,10 @@ import os
 import cv2
 from PyQt6.QtWidgets import QWidget
 from PyQt6.QtGui import QGuiApplication
-from lensepy_app.appli._app.template_controller import TemplateController
-from lensepy_app.modules.default.default_views import *
-from lensepy_app.widgets import ImageDisplayWidget
-from lensepy_app.widgets.html_view import HTMLView
+from lensepy_app_lite.appli._app.template_controller import TemplateController
+from lensepy_app_lite.modules.default.default_views import *
+from lensepy_app_lite.widgets import ImageDisplayWidget
+from lensepy_app_lite.widgets.html_view import HTMLView
 from lensepy import load_dictionary, translate
 
 from typing import TYPE_CHECKING
@@ -55,28 +55,3 @@ class DefaultController(TemplateController):
     def get_contributors_by_type(self):
         """Return a list of contributors based on type : dev, sciexp"""
         return self.parent.get_xml_contributors()
-
-'''
-import xml.etree.ElementTree as ET
-
-# Charger le fichier XML
-tree = ET.parse("mon_fichier.xml")  # remplace par le chemin réel
-root = tree.getroot()
-
-# Dictionnaire pour stocker les contributeurs par type
-contributors_by_type = {}
-
-# Parcourir tous les contributeurs
-for contributor in root.findall("./contributors/contributor"):
-    ctype = contributor.get("type")
-    name = contributor.findtext("name")
-
-    # Ajouter au dictionnaire
-    if ctype not in contributors_by_type:
-        contributors_by_type[ctype] = []
-    contributors_by_type[ctype].append(name)
-
-# Afficher le résultat
-for ctype, names in contributors_by_type.items():
-    print(f"{ctype}: {names}")
-'''

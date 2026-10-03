@@ -1,4 +1,4 @@
-from lensepy_app.appli._app.template_controller import TemplateController
+from lensepy_app_lite.appli._app.template_controller import TemplateController
 from .my_module_views import MyModuleTopLeftWidget, MyModuleBotLeftWidget
 
 class MyModuleController(TemplateController):

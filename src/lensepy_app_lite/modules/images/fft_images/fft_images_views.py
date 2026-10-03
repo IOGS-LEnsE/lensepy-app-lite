@@ -2,9 +2,8 @@ import cv2
 import numpy as np
 from lensepy import translate
 from lensepy.css import *
-from lensepy.pyqt6.widget_slider import SliderBloc
-from lensepy.utils import make_hline
-from lensepy.widgets import LabelWidget
+from lensepy_app_lite import make_hline
+from lensepy_app_lite.widgets import LabelWidget, SliderBloc
 from PyQt6.QtCore import Qt, pyqtSignal
 from PyQt6.QtWidgets import (
     QVBoxLayout, QWidget, QLabel, QPushButton

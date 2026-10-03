@@ -13,8 +13,6 @@ from PyQt6.QtWidgets import QMainWindow, QWidget, QVBoxLayout, QLabel
 from PyQt6.QtCore import pyqtSignal
 from lensepy.css import *
 
-from lensepy.pyqt6.widget_combobox import *
-from lensepy.pyqt6.widget_image_display import *
 from lensepy.images.processing import *
 from enum import Enum
 
