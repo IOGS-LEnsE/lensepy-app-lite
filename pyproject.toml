@@ -35,4 +35,4 @@ packages = ["src/lensepy_app_lite"]
 
 [tool.setuptools.package-data]
 # File to include
-"lensepy_app" = ["**/*.xml", "**/*.jpg"]
+"lensepy_app_lite" = ["**/*.xml", "**/*.jpg"]
